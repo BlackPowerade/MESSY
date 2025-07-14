@@ -26,3 +26,8 @@ Again, broad strokes what something should and shouldn't be.
 The main limitations are that of specificity and generally identifying important characteristics. It also doesn't truly account for boundary testing, It specifies a range, but doesn't test what might happen when a value on the boundary is provided.   
 That and actually testing with this methodoly might not be worth it when there are small sets to test. If a simple boolean property could tell you if something is a valid input or not, it would just be handled in the code itself, a specific test for it would likely be unnecessary. 
 
+## Refs/AI/etc.
+
+[Wikipedia Equivalence Partioning](https://en.wikipedia.org/wiki/Equivalence_partitioning)   
+Art of software testing pg 50 - 54   
+_My own personal experience_
