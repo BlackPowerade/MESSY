@@ -1,7 +1,6 @@
 import Triangle from '../src/triangle'
 import InvalidTriangle from '../src/InvalidTriangle'
-import {assert, assertType, describe, test} from 'vitest'
-
+import {assert, describe, test} from 'vitest'
 
 describe('Reject', () => {
     test.concurrent('negative angles', async () => assert.throws(() => new Triangle(-1, 100, 81), InvalidTriangle))
@@ -9,7 +8,6 @@ describe('Reject', () => {
     test.concurrent('excess angle sum', async () => assert.throws(() => new Triangle(11, 100, 70), InvalidTriangle))
     test.concurrent('nonsense angle params', async () => assert.throws(() => new Triangle(9, 100, undefined), InvalidTriangle))
 })
-
 
 const equalateralTri = new Triangle(60, 60, 60)
 describe('equalateral', () => {
@@ -32,7 +30,6 @@ describe('scalene', () => {
     test.concurrent('is not equalateral', async () => assert.isFalse(scaleneTri.isEquilateral()))
 })
 
-// Obtuse triangle
 const obtuseTri = new Triangle(120, 30, 30)
 describe('obtuse', () => {
   test.concurrent('is obtuse', async () => assert.isTrue(obtuseTri.isObtuse()))
@@ -40,7 +37,6 @@ describe('obtuse', () => {
   test.concurrent('is not right', async () => assert.isFalse(obtuseTri.isRight()))
 })
 
-// Right triangle
 const rightTri = new Triangle(90, 45, 45)
 describe('right', () => {
   test.concurrent('is right', async () => assert.isTrue(rightTri.isRight()))
