@@ -1,5 +1,5 @@
-import Triangle from '../../week_1/is-triangle/src/triangle'
-import InvalidTriangle from '../../week_1/is-triangle/src/InvalidTriangle'
+import Triangle from '../src/triangle'
+import InvalidTriangle from '../src/InvalidTriangle'
 import {assert, assertType, describe, test} from 'vitest'
 
 
