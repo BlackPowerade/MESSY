@@ -20,9 +20,4 @@ jobs:
         run: cd ./week_1/is-triangle && npm install
 
       - name: Run Tests with Coverage
-        run: npx vitest --coverage.enabled true
-
-      - name: Report Coverage
-        uses: davelosert/vitest-coverage-report-action@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+        run: npx vitest
